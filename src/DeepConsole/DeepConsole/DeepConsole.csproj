@@ -51,6 +51,7 @@
     <Compile Include="Native\COLORREF.cs" />
     <Compile Include="Native\CONSOLE_SCREEN_BUFFER_INFO_EX.cs" />
     <Compile Include="Native\COORD.cs" />
+    <Compile Include="Native\NativeMethods.cs" />
     <Compile Include="Native\SMALL_RECT.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SetConsoleColor.cs" />
