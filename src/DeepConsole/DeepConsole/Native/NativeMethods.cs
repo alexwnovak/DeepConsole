@@ -9,5 +9,11 @@ namespace DeepConsole.Native
 
       [DllImport( "kernel32.dll", SetLastError = true )]
       public static extern IntPtr GetStdHandle( int nStdHandle );
+
+      [DllImport( "kernel32.dll", SetLastError = true )]
+      public static extern bool GetConsoleScreenBufferInfoEx(
+         IntPtr hConsoleOutput,
+         ref CONSOLE_SCREEN_BUFFER_INFO_EX ConsoleScreenBufferInfo
+      );
    }
 }
