@@ -1,4 +1,4 @@
-﻿namespace DeepConsole.Native
+﻿namespace DeepConsole.Core.Interop
 {
    public struct SMALL_RECT
    {

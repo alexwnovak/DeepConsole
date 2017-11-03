@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace DeepConsole.Native
+namespace DeepConsole.Core.Interop
 {
    [StructLayout( LayoutKind.Sequential )]
    public struct CONSOLE_SCREEN_BUFFER_INFO_EX

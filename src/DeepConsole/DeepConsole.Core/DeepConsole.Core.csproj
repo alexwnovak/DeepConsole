@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,6 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleAttributes.cs" />
+    <Compile Include="Interop\COLORREF.cs" />
+    <Compile Include="Interop\CONSOLE_SCREEN_BUFFER_INFO_EX.cs" />
+    <Compile Include="Interop\COORD.cs" />
+    <Compile Include="Interop\NativeMethods.cs" />
+    <Compile Include="Interop\SMALL_RECT.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

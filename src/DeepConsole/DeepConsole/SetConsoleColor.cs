@@ -1,7 +1,6 @@
 ﻿using System.Drawing;
 using System.Management.Automation;
-using System.Runtime.InteropServices;
-using DeepConsole.Native;
+using DeepConsole.Core;
 
 namespace DeepConsole
 {
@@ -30,28 +29,10 @@ namespace DeepConsole
          set;
       }
 
-      private static COLORREF ToColorRef( Color color )
-      {
-         return new COLORREF
-         {
-            R = color.R,
-            G = color.G,
-            B = color.B
-         };
-      }
-
       protected override void ProcessRecord()
       {
-         var stdout = NativeMethods.GetStdHandle( NativeMethods.STD_OUTPUT_HANDLE );
-
-         var bufferInfo = new CONSOLE_SCREEN_BUFFER_INFO_EX();
-         bufferInfo.cbSize = Marshal.SizeOf( bufferInfo );
-
-         NativeMethods.GetConsoleScreenBufferInfoEx( stdout, ref bufferInfo );
-
-         bufferInfo.ColorTable[0] = ToColorRef( Color );
-
-         NativeMethods.SetConsoleScreenBufferInfoEx( stdout, ref bufferInfo );
+         var consoleAttributes = new ConsoleAttributes();
+         consoleAttributes.SetColor( Index, Color );
       }
    }
 }
