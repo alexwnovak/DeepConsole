@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsoleAttributes.cs" />
+    <Compile Include="IConsoleModifier.cs" />
     <Compile Include="Interop\COLORREF.cs" />
     <Compile Include="Interop\CONSOLE_SCREEN_BUFFER_INFO_EX.cs" />
     <Compile Include="Interop\COORD.cs" />
