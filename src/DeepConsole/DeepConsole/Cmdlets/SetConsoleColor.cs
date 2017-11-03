@@ -2,7 +2,7 @@
 using System.Management.Automation;
 using DeepConsole.Core;
 
-namespace DeepConsole
+namespace DeepConsole.Cmdlets
 {
    [Cmdlet( VerbsCommon.Set, "ConsoleColor" )]
    public class SetConsoleColor : PSCmdlet
@@ -31,7 +31,7 @@ namespace DeepConsole
 
       protected override void ProcessRecord()
       {
-         var consoleAttributes = new ConsoleAttributes();
+         var consoleAttributes = new ConsoleModifier();
          consoleAttributes.SetColor( Index, Color );
       }
    }

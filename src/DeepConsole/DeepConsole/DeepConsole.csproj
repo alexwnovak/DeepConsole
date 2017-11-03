@@ -49,7 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SetConsoleColor.cs" />
+    <Compile Include="Cmdlets\SetConsoleColor.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DeepConsole.Core\DeepConsole.Core.csproj">
