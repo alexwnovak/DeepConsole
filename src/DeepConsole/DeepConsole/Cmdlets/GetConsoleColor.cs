@@ -9,7 +9,7 @@ namespace DeepConsole.Cmdlets
       [Parameter(
          Mandatory = true,
          Position = 0,
-         HelpMessage = "The color index (from 0-15) for the color index to set"
+         HelpMessage = "The color index (from 0-15) for the color index to get"
       )]
       public int Index
       {
