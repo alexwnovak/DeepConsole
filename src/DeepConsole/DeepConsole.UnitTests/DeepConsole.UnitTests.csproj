@@ -46,6 +46,9 @@
     <Reference Include="Moq, Version=4.7.142.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>..\packages\Moq.4.7.142\lib\net45\Moq.dll</HintPath>
     </Reference>
+    <Reference Include="NanoBuilder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c40476dab453c8a2, processorArchitecture=MSIL">
+      <HintPath>..\packages\NanoBuilder.0.9.4\lib\netstandard1.3\NanoBuilder.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
