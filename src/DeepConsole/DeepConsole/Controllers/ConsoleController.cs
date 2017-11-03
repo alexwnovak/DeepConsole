@@ -16,5 +16,10 @@ namespace DeepConsole.Controllers
       {
          _consoleModifier.SetColor( index, color );
       }
+
+      public Color GetColor( int index )
+      {
+         return _consoleModifier.GetColor( index );
+      }
    }
 }

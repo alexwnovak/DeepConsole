@@ -1,4 +1,5 @@
 ﻿using System.Management.Automation;
+using DeepConsole.Controllers;
 using DeepConsole.Core;
 
 namespace DeepConsole.Cmdlets
@@ -19,9 +20,9 @@ namespace DeepConsole.Cmdlets
 
       protected override void ProcessRecord()
       {
-         var consoleModifier = new ConsoleModifier();
+         var controller = new ConsoleController( new ConsoleModifier() );
 
-         var color = consoleModifier.GetColor( Index );
+         var color = controller.GetColor( Index );
 
          WriteObject( color );
       }
