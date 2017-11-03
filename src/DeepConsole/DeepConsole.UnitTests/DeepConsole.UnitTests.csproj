@@ -52,6 +52,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -76,6 +77,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DeepConsole.Core\DeepConsole.Core.csproj">
+      <Project>{B9079897-5C28-4921-A976-AE24EFE24C2B}</Project>
+      <Name>DeepConsole.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DeepConsole\DeepConsole.csproj">
       <Project>{45ce4ed0-e9a9-41c6-8510-617926208cb6}</Project>
       <Name>DeepConsole</Name>
