@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepConsole", "DeepConsole\DeepConsole.csproj", "{45CE4ED0-E9A9-41C6-8510-617926208CB6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepConsole.Core", "DeepConsole.Core\DeepConsole.Core.csproj", "{B9079897-5C28-4921-A976-AE24EFE24C2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepConsole.UnitTests", "DeepConsole.UnitTests\DeepConsole.UnitTests.csproj", "{1B3BE01C-3248-4009-9212-F6BF348D8244}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{45CE4ED0-E9A9-41C6-8510-617926208CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45CE4ED0-E9A9-41C6-8510-617926208CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45CE4ED0-E9A9-41C6-8510-617926208CB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9079897-5C28-4921-A976-AE24EFE24C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9079897-5C28-4921-A976-AE24EFE24C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9079897-5C28-4921-A976-AE24EFE24C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9079897-5C28-4921-A976-AE24EFE24C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B3BE01C-3248-4009-9212-F6BF348D8244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B3BE01C-3248-4009-9212-F6BF348D8244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B3BE01C-3248-4009-9212-F6BF348D8244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B3BE01C-3248-4009-9212-F6BF348D8244}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

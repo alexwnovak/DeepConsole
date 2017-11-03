@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace DeepConsole.Native
+namespace DeepConsole.Core.Interop
 {
    internal static class NativeMethods
    {
