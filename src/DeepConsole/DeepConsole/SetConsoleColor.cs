@@ -49,7 +49,7 @@ namespace DeepConsole
 
          NativeMethods.GetConsoleScreenBufferInfoEx( stdout, ref bufferInfo );
 
-         bufferInfo.black = ToColorRef( Color );
+         bufferInfo.ColorTable[0] = ToColorRef( Color );
 
          NativeMethods.SetConsoleScreenBufferInfoEx( stdout, ref bufferInfo );
       }

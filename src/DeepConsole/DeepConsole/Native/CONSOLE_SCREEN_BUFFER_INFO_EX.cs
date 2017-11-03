@@ -13,21 +13,8 @@ namespace DeepConsole.Native
       public COORD dwMaximumWindowSize;
       public ushort wPopupAttributes;
       public bool bFullscreenSupported;
-      public COLORREF black;
-      public COLORREF darkBlue;
-      public COLORREF darkGreen;
-      public COLORREF darkCyan;
-      public COLORREF darkRed;
-      public COLORREF darkMagenta;
-      public COLORREF darkYellow;
-      public COLORREF gray;
-      public COLORREF darkGray;
-      public COLORREF blue;
-      public COLORREF green;
-      public COLORREF cyan;
-      public COLORREF red;
-      public COLORREF magenta;
-      public COLORREF yellow;
-      public COLORREF white;
+
+      [MarshalAs( UnmanagedType.ByValArray, SizeConst = 16 )]
+      public COLORREF[] ColorTable;
    }
 }
