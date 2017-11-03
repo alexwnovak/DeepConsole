@@ -4,7 +4,7 @@ using DeepConsole.Core.Interop;
 
 namespace DeepConsole.Core
 {
-   public class ConsoleAttributes
+   public class ConsoleModifier : IConsoleModifier
    {
       public void SetColor( int index, Color color )
       {

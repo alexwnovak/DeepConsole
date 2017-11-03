@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsoleAttributes.cs" />
+    <Compile Include="ConsoleModifier.cs" />
     <Compile Include="IConsoleModifier.cs" />
     <Compile Include="Interop\COLORREF.cs" />
     <Compile Include="Interop\CONSOLE_SCREEN_BUFFER_INFO_EX.cs" />
