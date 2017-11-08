@@ -37,5 +37,9 @@ namespace DeepConsole.Core
 
          NativeMethods.SetConsoleScreenBufferInfoEx( stdout, ref bufferInfo );
       }
+
+      public void SetColors( int[] indices, Color[] colors )
+      {
+      }
    }
 }

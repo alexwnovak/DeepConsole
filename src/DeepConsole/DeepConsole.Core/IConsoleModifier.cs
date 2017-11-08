@@ -6,5 +6,6 @@ namespace DeepConsole.Core
    {
       Color GetColor( int index );
       void SetColor( int index, Color color );
+      void SetColors( int[] indices, Color[] colors );
    }
 }

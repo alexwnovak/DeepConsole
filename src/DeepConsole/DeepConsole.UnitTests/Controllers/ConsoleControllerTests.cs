@@ -1,6 +1,9 @@
 ﻿using System.Drawing;
+using System.Linq;
+using DeepConsole.Adapters;
 using DeepConsole.Controllers;
 using DeepConsole.Core;
+using DeepConsole.Models;
 using FluentAssertions;
 using Xunit;
 using NanoBuilder;
@@ -43,6 +46,30 @@ namespace DeepConsole.UnitTests.Controllers
          var actualColor = controller.GetColor( index );
 
          actualColor.Should().Be( color );
+      }
+
+      [Fact]
+      public void SetColorPalette_PaletteContainsOneColorMapping_MappingIsSentToModifier()
+      {
+         const string filePath = "DoesntMatter";
+         var colorPalette = new ColorPalette();
+         colorPalette.Add( new ColorDefinition( 5, Color.Red ) );
+
+         var consoleModifierMock = new Mock<IConsoleModifier>();
+
+         var fileSystemMock = new Mock<IJsonReader>();
+         fileSystemMock.Setup( fs => fs.ReadAllText<ColorPalette>( filePath ) ).Returns( colorPalette );
+
+         var controller = ObjectBuilder.For<ConsoleController>()
+            .With( consoleModifierMock.Object )
+            .With( fileSystemMock.Object )
+            .Build();
+
+         controller.SetColorPalette( filePath );
+
+         consoleModifierMock.Verify( cm => cm.SetColors(
+            It.Is<int[]>( i => i.Length == 1 && i.Contains( 5 ) ),
+            It.Is<Color[]>( i => i.Length == 1 && i.Contains( Color.Red ) ) ) );
       }
    }
 }
