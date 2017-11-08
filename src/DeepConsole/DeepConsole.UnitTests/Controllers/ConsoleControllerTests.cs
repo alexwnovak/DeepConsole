@@ -4,10 +4,10 @@ using DeepConsole.Adapters;
 using DeepConsole.Controllers;
 using DeepConsole.Core;
 using DeepConsole.Models;
-using FluentAssertions;
 using Xunit;
-using NanoBuilder;
 using Moq;
+using NanoBuilder;
+using FluentAssertions;
 
 namespace DeepConsole.UnitTests.Controllers
 {
