@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapters\JsonReader.cs" />
+    <Compile Include="Adapters\IJsonReader.cs" />
     <Compile Include="Cmdlets\GetConsoleColor.cs" />
     <Compile Include="Cmdlets\SetConsolePalette.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
