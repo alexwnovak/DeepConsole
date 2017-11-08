@@ -52,6 +52,8 @@
     <Compile Include="Adapters\IJsonReader.cs" />
     <Compile Include="Cmdlets\GetConsoleColor.cs" />
     <Compile Include="Cmdlets\SetConsolePalette.cs" />
+    <Compile Include="Models\ColorDefinition.cs" />
+    <Compile Include="Models\ColorPalette.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Cmdlets\SetConsoleColor.cs" />
     <Compile Include="Controllers\ConsoleController.cs" />
@@ -62,5 +64,6 @@
       <Name>DeepConsole.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
