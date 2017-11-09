@@ -1,6 +1,5 @@
 ﻿using System.Drawing;
 using System.Management.Automation;
-using DeepConsole.Adapters;
 using DeepConsole.Controllers;
 using DeepConsole.Core;
 
@@ -33,7 +32,7 @@ namespace DeepConsole.Cmdlets
 
       protected override void ProcessRecord()
       {
-         var controller = new ConsoleController( new ConsoleModifier(), new JsonReader() );
+         var controller = new ConsoleController( new ConsoleModifier() );
          controller.SetColor( Index, Color );
       }
    }
