@@ -21,7 +21,7 @@ namespace DeepConsole.Cmdlets
       protected override void ProcessRecord()
       {
          var controller = new ConsoleController( new ConsoleModifier() );
-         controller.SetColorPalette( PaletteFilePath );
+         controller.SetConsolePalette( PaletteFilePath );
       }
    }
 }

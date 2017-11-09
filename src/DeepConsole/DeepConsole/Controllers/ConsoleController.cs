@@ -23,7 +23,7 @@ namespace DeepConsole.Controllers
          return _consoleModifier.GetColor( index );
       }
 
-      public void SetColorPalette( string paletteFilePath )
+      public void SetConsolePalette( string paletteFilePath )
       {
          throw new NotImplementedException();
       }
