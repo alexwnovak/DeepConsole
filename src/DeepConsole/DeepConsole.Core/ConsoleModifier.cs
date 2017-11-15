@@ -40,6 +40,24 @@ namespace DeepConsole.Core
 
       public void SetColors( int[] indices, Color[] colors )
       {
+         var stdout = NativeMethods.GetStdHandle( NativeMethods.STD_OUTPUT_HANDLE );
+
+         var bufferInfo = new CONSOLE_SCREEN_BUFFER_INFO_EX();
+         bufferInfo.cbSize = Marshal.SizeOf( bufferInfo );
+
+         NativeMethods.GetConsoleScreenBufferInfoEx( stdout, ref bufferInfo );
+
+         for ( int index = 0; index < indices.Length; index++ )
+         {
+            bufferInfo.ColorTable[indices[index]] = new COLORREF
+            {
+               R = colors[index].R,
+               G = colors[index].G,
+               B = colors[index].B
+            };
+         }
+
+         NativeMethods.SetConsoleScreenBufferInfoEx( stdout, ref bufferInfo );
       }
    }
 }

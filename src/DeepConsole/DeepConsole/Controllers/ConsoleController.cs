@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Drawing;
+using System.Linq;
 using DeepConsole.Core;
+using DeepConsole.Models;
 
 namespace DeepConsole.Controllers
 {
@@ -25,6 +27,15 @@ namespace DeepConsole.Controllers
 
       public void SetConsolePalette( string paletteFilePath )
       {
+         string json = System.IO.File.ReadAllText( paletteFilePath );
+
+         var colorPalette = new ColorPaletteReader().FromJson( json );
+
+         var indices = colorPalette.ColorDefinitions.Select( cd => cd.Index ).ToArray();
+         var colors = colorPalette.ColorDefinitions.Select( cd => cd.Color ).ToArray();
+
+         _consoleModifier.SetColors( indices, colors );
+
          throw new NotImplementedException();
       }
    }

@@ -44,5 +44,22 @@ namespace DeepConsole.UnitTests.Controllers
 
          actualColor.Should().Be( color );
       }
+
+      [Fact]
+      public void SetConsolePalette_()
+      {
+         const string paletteFileName = "Palette.json";
+         const int index = 123;
+         var color = Color.Red;
+
+         var consoleModifierMock = new Mock<IConsoleModifier>();
+         consoleModifierMock.Setup( cm => cm.GetColor( index ) ).Returns( color );
+
+         var controller = ObjectBuilder.For<ConsoleController>()
+            .With( consoleModifierMock.Object )
+            .Build();
+
+         controller.SetConsolePalette( paletteFileName );
+      }
    }
 }
