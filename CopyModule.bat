@@ -1,0 +1,1 @@
+copy src\DeepConsole\DeepConsole\bin\Debug\*.dll \Users\a.novak\Documents\WindowsPowerShell\Modules\DeepConsole /Y
