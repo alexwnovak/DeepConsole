@@ -21,5 +21,10 @@ namespace DeepConsole.Controllers
       {
          return _consoleModifier.GetColor( index );
       }
+
+      public void WriteColorTable()
+      {
+         
+      }
    }
 }
