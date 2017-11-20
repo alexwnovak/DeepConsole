@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using DeepConsole.Core;
 
 namespace DeepConsole.Controllers
@@ -24,7 +25,15 @@ namespace DeepConsole.Controllers
 
       public void WriteColorTable()
       {
-         
+         var originalColor = Console.ForegroundColor;
+
+         for ( int index = 0; index < 16; index++ )
+         {
+            Console.ForegroundColor = (ConsoleColor) index;
+            Console.WriteLine( $"Index {index:D2}");
+         }
+
+         Console.ForegroundColor = originalColor;
       }
    }
 }
