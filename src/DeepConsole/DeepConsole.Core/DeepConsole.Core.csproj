@@ -45,6 +45,7 @@
     <Compile Include="ConsoleModifier.cs" />
     <Compile Include="IConsoleModifier.cs" />
     <Compile Include="Interop\COLORREF.cs" />
+    <Compile Include="Interop\CONSOLE_FONT_INFO_EX.cs" />
     <Compile Include="Interop\CONSOLE_SCREEN_BUFFER_INFO_EX.cs" />
     <Compile Include="Interop\COORD.cs" />
     <Compile Include="Interop\NativeMethods.cs" />
