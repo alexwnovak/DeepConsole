@@ -28,6 +28,11 @@ namespace DeepConsole.Core
 
          NativeMethods.GetConsoleScreenBufferInfoEx( stdout, ref bufferInfo );
 
+         // For some reason, each call decrements the srWindow.Bottom field, which causes
+         // the window to shrink with each call. Setting all colors can dramatically shrink
+         // it, so we pre-increment the Bottom to accommodate this behavior (total hack)
+         bufferInfo.srWindow.Bottom++;
+
          bufferInfo.ColorTable[index] = new COLORREF
          {
             R = color.R,

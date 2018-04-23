@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+VisualStudioVersion = 15.0.27130.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepConsole", "DeepConsole\DeepConsole.csproj", "{45CE4ED0-E9A9-41C6-8510-617926208CB6}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepConsole.UnitTests", "DeepConsole.UnitTests\DeepConsole.UnitTests.csproj", "{1B3BE01C-3248-4009-9212-F6BF348D8244}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepConsole.AcceptanceTests", "DeepConsole.AcceptanceTests\DeepConsole.AcceptanceTests.csproj", "{F5010A05-F252-4936-904D-6BC63EAABB60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Driver", "Driver\Driver.csproj", "{BD14365B-F126-4D8A-8BAD-65485DB09697}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F5010A05-F252-4936-904D-6BC63EAABB60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5010A05-F252-4936-904D-6BC63EAABB60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5010A05-F252-4936-904D-6BC63EAABB60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD14365B-F126-4D8A-8BAD-65485DB09697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD14365B-F126-4D8A-8BAD-65485DB09697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD14365B-F126-4D8A-8BAD-65485DB09697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD14365B-F126-4D8A-8BAD-65485DB09697}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
