@@ -3,8 +3,8 @@ using DeepConsole.Core.Interop;
 
 namespace DeepConsole.Cmdlets
 {
-   [Cmdlet( "Decrement", "ConsoleFontSize" )]
-   public class DecrementConsoleFontSize : PSCmdlet
+   [Cmdlet( VerbsCommon.Set, "ConsoleFontSizeLarger" )]
+   public class SetConsoleFontSizeLarger : PSCmdlet
    {
       protected override void ProcessRecord()
       {
@@ -14,9 +14,8 @@ namespace DeepConsole.Cmdlets
 
          NativeMethods.GetCurrentConsoleFontEx( stdout, false, bufferInfo );
 
-         bufferInfo.FontHeight--;
+         bufferInfo.FontHeight++;
          NativeMethods.SetCurrentConsoleFontEx( stdout, false, bufferInfo );
-
       }
    }
 }

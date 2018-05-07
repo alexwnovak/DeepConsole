@@ -48,9 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cmdlets\DecrementConsoleFontSize.cs" />
+    <Compile Include="Cmdlets\SetConsoleFontSizeSmaller.cs" />
     <Compile Include="Cmdlets\GetConsoleColor.cs" />
-    <Compile Include="Cmdlets\IncrementConsoleFontSize.cs" />
+    <Compile Include="Cmdlets\SetConsoleFontSizeLarger.cs" />
     <Compile Include="Cmdlets\WriteColorTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Cmdlets\SetConsoleColor.cs" />
